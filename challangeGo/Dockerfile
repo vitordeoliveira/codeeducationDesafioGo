@@ -7,7 +7,7 @@ COPY . .
 RUN  go build hello-world.go
 RUN rm hello-world.go
 
-FROM alpine
+FROM scratch
 
 WORKDIR /usr/src/app
 
